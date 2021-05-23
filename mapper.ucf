@@ -1,0 +1,15 @@
+net ps2clk loc=b16;
+net ps2data loc=e13;
+net clk loc=t9;
+net reset loc=k4;
+net h_sync loc=b7;
+net v_sync loc=d8;
+net red<2> loc=b1;
+net red<1> loc=d6;
+net red<0> loc=c8;
+net green<2> loc=c3;
+net green<1> loc=a5;
+net green<0> loc=a8;
+net blue<2> loc=d5;
+net blue<1> loc=e7;
+net blue<0> loc=c9;
