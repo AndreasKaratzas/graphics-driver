@@ -2,7 +2,7 @@ module vga_controller( pulse25M, pulse05H, reset, height, width, rev, fl, h_sync
 	input        pulse25M, pulse05H, reset;
 	input  [9:0] width;
 	input  [8:0] height;
-	input 		 rev, fl;
+	input 	     rev, fl;
 	output       h_sync, v_sync;
 	output [2:0] red;
 	output [2:0] green;
@@ -33,7 +33,7 @@ module vga_controller( pulse25M, pulse05H, reset, height, width, rev, fl, h_sync
 
 	//Pixel and line counters
 	horizontal_counter vga_h ( reset, pulse25M, enable_v_counter, h_count );
-    vertical_counter   vga_v ( reset, pulse25M, enable_v_counter, v_count );
+    	vertical_counter   vga_v ( reset, pulse25M, enable_v_counter, v_count );
 
 	//h_sync and v_sync timing
 	assign h_sync = ((h_count > H_FRONT_PORCH - 1'b1) && (h_count < H_FRONT_PORCH + H_SYNC )) ? 1'b0 : 1'b1;
