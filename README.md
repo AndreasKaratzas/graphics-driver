@@ -9,6 +9,7 @@ The purpose of the project was to build a display system for a VGA screen.
 The figure below that demonstrates the desired system architecture. The major system components are:
 * The Keyboard controller, that reads the instructions from the keyboard
 * The Display controller, that controls the display connected to the system
+
 ![System Architecture](graphics-driver.PNG)
 ----------
 ### Instructions
